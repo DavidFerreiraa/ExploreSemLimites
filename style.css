@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-purple-500: #B52184;
+    --color-purple-800: #312D64;
+}
+
+html, body, input {
+    font-family: 'mulish', sans-serif;
+}
+
+body {
+    font-family: 'mulish', sans-serif;
+    font-size: 1.6rem;
+}
+
+section {
+    padding: 0rem 3.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: var(--color-purple-500);
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+p {
+    color: var(--color-purple-800);
+    font-weight: 600;
+}
+
+.title {
+    margin: 1.7rem 0rem 3.5rem;
+}
+
+.arrow-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.8rem;
+    height: 10rem;
+    border: 3px solid var(--color-purple-500);
+    border-radius: 8rem;
+}
