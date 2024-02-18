@@ -9,6 +9,7 @@
 
     --color-purple-500: #B52184;
     --color-purple-800: #312D64;
+    --color-white: #FFFFFF;
 }
 
 html, body, input {
@@ -22,6 +23,10 @@ body {
 
 section {
     padding: 0rem 3.2rem;
+}
+
+.cards {
+    padding: 0;
 }
 
 main {
@@ -54,4 +59,29 @@ p {
     height: 10rem;
     border: 3px solid var(--color-purple-500);
     border-radius: 8rem;
+    margin-bottom: 9rem;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(#343193, #302C63);
+    padding: 5.2rem 3.9rem;
+    gap: 5rem;
+}
+
+aside .card {
+    background-color: var(--color-white);
+    padding: 2.6rem;
+    border-radius: 2rem;
+}
+
+.card h2 {
+    font-size: 3rem;
+    color: var(--color-purple-500);
+    margin-bottom: 2rem;
+}
+
+.card img {
+    margin-bottom: 3.3rem;
 }
