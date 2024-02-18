@@ -82,6 +82,8 @@ aside .card {
     background-color: var(--color-white);
 
     border-radius: 2rem;
+
+    transition-duration: 1s;
 }
 
 .card h2 {
@@ -248,5 +250,24 @@ footer p {
         background-position: right;
         width: 100%;
         background-repeat: no-repeat;
+    }
+}
+
+
+#send:hover {
+    opacity: .9;
+}
+
+.card:hover {
+    animation: resize 1s ease forwards;
+}
+
+
+@keyframes resize {
+    from {
+
+    }
+    to {
+        transform: scale(1.2);
     }
 }
