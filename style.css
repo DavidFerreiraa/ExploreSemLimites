@@ -13,7 +13,7 @@
     --linear-gradient: #343193, #302C63;
 }
 
-html, body, input {
+html, body, input, textarea {
     font-family: 'mulish', sans-serif;
 }
 
@@ -99,10 +99,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-}
 
-.send-mail {
-    padding: 7.8rem 4rem;
+    margin: 7.8rem 4rem;
 }
 
 .send-mail h2 {
@@ -118,7 +116,7 @@ label {
     display: none;
 }
 
-.input-wrapper input {
+.input-wrapper input, textarea {
     width: 100%;
     height: 4.8rem;
 
@@ -128,20 +126,20 @@ label {
     text-align: start;
 }
 
-.input-wrapper input::placeholder {
+#email, #name {
     padding: 1.6rem 5rem;
 }
 
-.text input {
+.text textarea, .text textarea::placeholder {
     height: 9.8rem;
+    align-items: start;
+    padding: 1.2rem 1.6rem;
 }
 
-.text input::placeholder {
+.text textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-
-    padding: 1.2rem 1.6rem;
 }
 
 .input-field {
@@ -178,4 +176,77 @@ footer {
 footer p {
     color: var(--color-white);
     text-align: center;
+}
+
+@media (min-width: 600px) {
+    aside {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    section {
+        padding: 0rem 10.9rem 32.6rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+        "title img"
+        "arrow-border ."
+        ;
+    }
+
+    main img {
+        grid-area: img;
+    }
+
+    main #astronauta {
+        width: 72rem;
+        height: 73rem;
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .title h1 {
+        text-align: start;
+        font-size: 5.9rem;
+    }
+
+    .title p {
+        font-size: 3.2rem;
+    }
+
+    .arrow-border {
+        grid-area: arrow-border;
+        width: 5.8rem;
+        height: 10.5rem;
+    }
+
+    aside {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .send-mail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .send-mail form {
+        max-width: 60rem;
+        max-height: 42rem;
+        margin: 9.5rem 9.2rem;
+    }
+
+    .send-mail::after {
+        content: "";
+        background-image: url("assets/image 11976.png");
+        background-position: right;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
 }
