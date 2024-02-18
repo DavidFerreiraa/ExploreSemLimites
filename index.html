@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Explore sem limites</title>
 </head>
@@ -41,27 +43,36 @@
             </div>
         </aside>
     </section>
-    <section>
+    <section class="send-mail">
         <h2>Entre em contato</h2>
         <form>
             <div class="input-wrapper name">
                 <label for="name">Seu nome</label>
-                <input type="text" id="name" name="name" placeholder="Seu nome"/>
+                <div class="input-field">
+                    <i class="material-icons">person</i>
+                    <input type="text" id="name" name="name" placeholder="Seu nome"></input>
+                </div>
             </div>
             <div class="input-wrapper email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email"/>
+                <div class="input-field">
+                    <i class="material-icons">alternate_email</i>
+                    <input type="email" id="email" name="email" placeholder="Email"/>
+                </div>
             </div>
             <div class="input-wrapper text">
                 <label for="message">Digite sua mensagem aqui...</label>
-                <input type="text" id="message" name="message" placeholder="Digite sua mensagem aqui..."/>
+                <div class="input-field">
+                    <i class="material-icons"></i>
+                    <input type="text" id="message" name="message" placeholder="Digite sua mensagem aqui..."/>
+                </div>
             </div>
             <label for="send">Enviar mensagem</label>
-            <input type="submit" name="send" id="send" placeholder="Enviar mensagem"/>
+            <input type="submit" name="send" id="send" placeholder="Enviar mensagem" value="Enviar mensagem"/>
         </form>
-        <footer>
-            <p>© 2023 - Rocketseat Explorer</p>
-        </footer>
     </section>
+    <footer>
+        <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
 </body>
 </html>
