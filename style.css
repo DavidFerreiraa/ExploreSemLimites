@@ -64,6 +64,8 @@ p {
 
     border: 3px solid var(--color-purple-500);
     border-radius: 8rem;
+
+    animation: slide-bottom 1.5s alternate infinite;
 }
 
 aside {
@@ -136,6 +138,7 @@ label {
     height: 9.8rem;
     align-items: start;
     padding: 1.2rem 1.6rem;
+    overflow: hidden;
 }
 
 .text textarea::placeholder {
@@ -262,7 +265,6 @@ footer p {
     animation: resize 1s ease forwards;
 }
 
-
 @keyframes resize {
     from {
 
@@ -271,3 +273,14 @@ footer p {
         transform: scale(1.2);
     }
 }
+
+@keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
